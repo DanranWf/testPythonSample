@@ -66,7 +66,7 @@ class Common(object):
         
 if __name__ == '__main__':
     # token=''
-    rq=Common("https://api.github.com/user/repos",token='a1b8650ec3c43cd63fd1cf4ca08922bfa4e81241')
+    rq=Common("https://api.github.com/user/repos",token='yourtoken')
     rs=rq.get('')
     print(rs.text)
     print(rs.headers)
