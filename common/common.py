@@ -67,7 +67,7 @@ class Common(object):
 if __name__ == '__main__':
     # token=''
     # headers=
-    rq=Common("http://192.168.0.103/basic-auth",username='DanranWf',password='Wf520lw1j')
+    rq=Common("http://192.168.0.103/basic-auth/1/2")
     rs=rq.get('')
     print rs.status_code
     print(rs.text)
