@@ -11,12 +11,12 @@ class Common(object):
         self.username=username
         self.password=password
         # self.to
-        if username and password:
-            self.session.auth=(self.username,self.password)
-        elif token:
-            a="token {}".format(token)
-            a=self.session.headers["Authorization"] = a
-            print(a)
+        # if username and password:
+        #     self.session.auth=(self.username,self.password)
+        # elif token:
+        #     a="token {}".format(token)
+        #     a=self.session.headers["Authorization"] = a
+        #     print(a)
 
             # pass
 
@@ -25,6 +25,7 @@ class Common(object):
         if method_name=='get':
             return self.session.get(url,**kwargs)
         if method_name=='post':
+            print('post method',url)
             return self.session.post(url,data,json,**kwargs)
         if method_name=='options':
             return self.session.options(url,**kwargs)
